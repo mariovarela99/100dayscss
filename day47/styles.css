@@ -1,0 +1,56 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 4px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pixelContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.pixel {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.pixel input {
+  /* display: none; */
+  position: absolute;
+  visibility: hidden;
+}
+
+.pixel input:checked ~ label {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.pixel label {
+  width: 100%;
+  height: 100%;
+  background: #e24e3f;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
