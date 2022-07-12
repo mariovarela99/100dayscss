@@ -1,0 +1,135 @@
+/* // delete the following line if no text is used */
+/* // edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  width: 400px;
+  height: 400px;
+  background: #3d3d3d;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.bottom {
+  width: 400px;
+  height: 160px;
+  background: #bdbdbd;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: -10px;
+  right: calc(100% + 40px);
+  animation: jumpball 3s linear infinite, sliceBall 1s linear;
+  /* // animation-fill-mode: forwards; */
+}
+
+@keyframes sliceBall {
+  0,
+  20%,
+  25%,
+  30%,
+  45%,
+  55%,
+  75%,
+  80%,
+  95%,
+  100% {
+    transform: scale(1);
+  }
+
+  15%,
+  60%,
+  90% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes jumpball {
+  0% {
+    top: 20px;
+    right: -10px;
+  }
+  15% {
+    top: 200px;
+    right: 100px;
+  }
+  20% {
+    top: 145px;
+    right: 115px;
+  }
+  25% {
+    top: 115px;
+    right: 130px;
+  }
+  30% {
+    top: 100px;
+    right: 150px;
+  }
+  45% {
+    top: 150px;
+    right: 200px;
+  }
+  55% {
+    right: 225px;
+  }
+  60% {
+    top: 200px;
+    right: 250px;
+  }
+  75% {
+    top: 140px;
+    right: 300px;
+  }
+  80% {
+    top: 160px;
+    right: 330px;
+  }
+  85% {
+    top: 180px;
+    right: 355px;
+  }
+  90% {
+    top: 200px;
+    right: 380px;
+  }
+  95% {
+    top: 140px;
+    right: 390px;
+  }
+  100% {
+    top: 160px;
+    right: 400px;
+  }
+}
