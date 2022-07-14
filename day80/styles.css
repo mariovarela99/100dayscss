@@ -1,0 +1,70 @@
+/* // delete the following line if no text is used */
+/* // edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part {
+  width: 25%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.6s;
+  cursor: pointer;
+  min-width: 10px;
+}
+
+.orange {
+  background: #e67e22;
+}
+
+.blue {
+  background: #34495e;
+}
+
+.part p {
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+  transform: scale(0);
+  transition: transform 0.6s;
+  width: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part:hover {
+  width: 100%;
+}
+
+.part:hover > p {
+  transform: scale(1);
+}

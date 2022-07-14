@@ -55,6 +55,7 @@
   /* // animation-fill-mode: forwards; */
 }
 
+/* 
 @keyframes sliceBall {
   0,
   20%,
@@ -74,7 +75,7 @@
   90% {
     transform: scale(1.1);
   }
-}
+} */
 
 @keyframes jumpball {
   0% {
